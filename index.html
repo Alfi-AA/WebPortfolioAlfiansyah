@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" data-type="service" data-radius="soft" data-buttons="pill">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Alfiansyah: Creative Technologist & Multimedia Specialist</title>
+  <meta name="description" content="Portfolio of Alfiansyah, a Creative Technologist specializing in graphic design, cinematic video editing, motion graphics, and interactive UI/UX experiences.">
+  <meta name="site-kind" content="other">
+  <meta name="page-type" content="service">
+  <meta name="theme-color" content="#09090B">
+
+  <!-- Typography: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Fixed Navbar -->
+  <header class="nav" id="main-nav">
+    <div class="nav__container">
+      <a class="nav__logo" href="#hero" aria-label="Alfiansyah Home">
+        Alfiansyah<span class="nav__logo-dot">.</span>
+      </a>
+
+      <!-- Desktop Nav & Actions Group (Right Aligned) -->
+      <div class="nav__right">
+        <nav class="nav__links" aria-label="Main Navigation">
+          <a class="nav__link" href="#portfolio">Portfolio</a>
+          <a class="nav__link" href="#summary">About</a>
+          <a class="nav__link" href="#portfolio">Project</a>
+        </nav>
+
+        <div class="nav__actions">
+          <!-- Subtle Available for Work Status -->
+          <div class="status-pill status-pill--subtle" title="Currently open for freelance & full-time roles">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for work</span>
+          </div>
+
+          <!-- Compact Pill Button -->
+          <a class="btn-pill btn-pill--nav" href="#contact">
+            <span>Get in touch</span>
+            <span class="btn-pill__icon">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="nav__mobile-menu" id="mobile-menu">
+      <div class="mobile-menu__inner">
+        <a class="mobile-menu__link" href="#portfolio">Portfolio</a>
+        <a class="mobile-menu__link" href="#summary">About</a>
+        <a class="mobile-menu__link" href="#portfolio">Project</a>
+        <a class="mobile-menu__link" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN WRAPPER (Hero, Summary, Portfolio, Contact) -->
+  <main id="main-content">
+
+    <!-- 1. HERO SECTION (Layered Editorial Canvas) -->
+    <section class="hero" id="hero">
+      <!-- Layer 1: Dramatic Backlight (z-index: 1) -->
+      <div class="hero__backlight hero-bg-lighting" aria-hidden="true"></div>
+
+      <!-- Layer 2: Giant Center Portrait (z-index: 2) -->
+      <div class="hero__portrait-layer">
+        <img 
+          class="hero__portrait-img" 
+          src="assets/profile/hero-portrait.png" 
+          alt="Portrait of Alfiansyah" 
+          loading="eager"
+          onerror="this.classList.add('portrait-fallback');"
+        >
+      </div>
+
+      <!-- Layer 3: Floating Typography & Content (z-index: 3) -->
+      <div class="hero__floating-canvas">
+        <!-- Left Side: Salutation & Giant Headline -->
+        <div class="hero__float-left hero-left">
+          <p class="hero__salutation">Hey, I'm Alfiansyah</p>
+          <h1 class="hero__title-giant">Creative<br>Technologist</h1>
+        </div>
+
+        <!-- Right Side: Sub-headline & Concise Description -->
+        <div class="hero__float-right hero-right">
+          <p class="hero__punchline">Precision in code.<br>Emotion in motion.</p>
+          <p class="hero__blurb">From visual storytelling to interactive UI, I craft multimedia experiences that connect.</p>
+        </div>
+      </div>
+
+      <!-- Layer 4: Floating & Transparent 4-Category Index (z-index: 4) -->
+      <div class="hero__categories">
+        <div class="hero__categories-grid">
+          <button class="hero__cat-item hero__index-item" data-category="Graphic Design">
+            <span class="hero__cat-num">#01</span>
+            <span class="hero__cat-label">Graphic Design</span>
+          </button>
+          <button class="hero__cat-item hero__index-item" data-category="Video Editing">
+            <span class="hero__cat-num">#02</span>
+            <span class="hero__cat-label">Video Editing</span>
+          </button>
+          <button class="hero__cat-item hero__index-item" data-category="Motion Graphics">
+            <span class="hero__cat-num">#03</span>
+            <span class="hero__cat-label">Motion Graphics</span>
+          </button>
+          <button class="hero__cat-item hero__index-item" data-category="UI/UX Design">
+            <span class="hero__cat-num">#04</span>
+            <span class="hero__cat-label">UI/UX Design</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT & EXPERIENCE SECTION (Side-by-Side Blueprint & Alternating Timeline) -->
+    <section class="section about-experience-section" id="summary">
+      <div class="wrap about-experience-wrap">
+        
+        <!-- Side-by-Side: About Me & Education (2 Kolom 50/50) -->
+        <div class="about-edu-container">
+          
+          <!-- Kolom Kiri: About Me -->
+          <div class="about-col">
+            <h2 class="about-col-title">
+              About <span class="strike-you">You</span> Me
+            </h2>
+            <p class="about-text">
+              A Multimedia Engineering graduate bridging Software Development (Web, Mobile, Game) with Creative Design. I utilize my expertise in Android Studio, Unity, and Web Technologies to build functional digital products with intuitive UI/UX and strong visual aesthetics. With practical experience as a Graphic Designer and Content Creator, specializing in video editing and motion graphics, I am proficient in the Adobe Creative Suite. I thrive in collaborative environments, producing engaging visual content that elevates brand identity and audience engagement, driven by a deep passion for design innovation and storytelling.
+            </p>
+            
+            <!-- Software Tools Icons (Local WebP) -->
+            <div class="about-tools-local" aria-label="Software & Design Tools">
+              <img src="assets/icon/icon_Ps.webp" alt="Photoshop" class="tool-icon-img" width="32" height="32" loading="lazy">
+              <img src="assets/icon/icon_Ai.webp" alt="Illustrator" class="tool-icon-img" width="32" height="32" loading="lazy">
+              <img src="assets/icon/icon_Pr.webp" alt="Premiere" class="tool-icon-img" width="32" height="32" loading="lazy">
+              <img src="assets/icon/icon_Ae.webp" alt="After Effects" class="tool-icon-img" width="32" height="32" loading="lazy">
+              <img src="assets/icon/icon_Figma.webp" alt="Figma" class="tool-icon-img" width="32" height="32" loading="lazy">
+              <img src="assets/icon/icon_Capcut.webp" alt="Capcut" class="tool-icon-img" width="32" height="32" loading="lazy">
+              <img src="assets/icon/icon_Blender.webp" alt="Blender" class="tool-icon-img" width="32" height="32" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Divider Vertikal Tipis -->
+          <div class="about-edu-divider" aria-hidden="true"></div>
+
+          <!-- Kolom Kanan: Education -->
+          <div class="edu-col">
+            <h3 class="about-col-title">Education</h3>
+            <div class="edu-content">
+              <h4 class="edu-degree">Diploma: Teknologi Rekayasa Multimedia</h4>
+              <p class="edu-school">Politeknik Negeri Media Kreatif Jakarta</p>
+              <p class="edu-text">
+                Multimedia engineering program focused on blending computational software technologies, human-centered UI/UX systems, and interactive media design with practical leadership and creative entrepreneurship.
+              </p>
+              <ul class="edu-bullets">
+                <li>Participated in the MAX 1.0 event in the Publication and Documentation division</li>
+                <li>Participating in PMW (Program Mahasiswa Wirausaha)</li>
+                <li>GPA: 3.76 / 4.00</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Section: Experience (Alternating Vertical Timeline) -->
+        <div class="experience-block">
+          <h3 class="about-subtitle">Experience</h3>
+          
+          <div class="alternating-timeline">
+            <!-- Center Vertical Guide Line -->
+            <div class="timeline-spine" aria-hidden="true"></div>
+
+            <!-- Item 1 (Right): AI Video Editor Intern - AHA Commerce -->
+            <div class="alt-item alt-item--right timeline-right">
+              <div class="alt-item__marker" aria-hidden="true"></div>
+              <div class="alt-item__content">
+                <h4 class="alt-item__role">AI Video Editor Intern</h4>
+                <p class="alt-item__company">AHA Commerce</p>
+                <p class="alt-item__brief">Leading e-commerce enabler specializing in brand scaling, data-driven marketing, and automated conversion optimization.</p>
+                <ul class="alt-item__bullets">
+                  <li>Utilized generative AI video synthesis pipelines to rapidly storyboard and produce commercial ads.</li>
+                  <li>Optimized video ad variations for TikTok Shop, Shopee, and Meta Ads to maximize click-through and retention rates.</li>
+                  <li>Collaborated with performance marketing teams to iterate high-converting visual hooks.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Item 2 (Left): Video Editor Intern - PT. Oasis Genius Hospitality -->
+            <div class="alt-item alt-item--left timeline-left">
+              <div class="alt-item__marker" aria-hidden="true"></div>
+              <div class="alt-item__content">
+                <h4 class="alt-item__role">Video Editor Intern</h4>
+                <p class="alt-item__company">PT. Oasis Genius Hospitality</p>
+                <p class="alt-item__brief">Premium hospitality management group curating luxury resort experiences and high-end lifestyle destinations.</p>
+                <ul class="alt-item__bullets">
+                  <li>Edited cinematic short-form promotional reels and resort showcases for high-net-worth audiences.</li>
+                  <li>Executed precision color grading, cinematic sound design, and drone footage pacing.</li>
+                  <li>Enhanced social media audience engagement through dynamic vertical storytelling.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Item 3 (Right): Graphic Designer Intern - PT. Gramedia Asri Media -->
+            <div class="alt-item alt-item--right timeline-right">
+              <div class="alt-item__marker" aria-hidden="true"></div>
+              <div class="alt-item__content">
+                <h4 class="alt-item__role">Graphic Designer Intern</h4>
+                <p class="alt-item__company">PT. Gramedia Asri Media</p>
+                <p class="alt-item__brief">Indonesia's largest publishing and retail powerhouse, driving nationwide literary culture and creative educational distribution.</p>
+                <ul class="alt-item__bullets">
+                  <li>Designed editorial publishing layouts, promotional book displays, and marketing collaterals for major releases.</li>
+                  <li>Developed engaging digital banner assets and social media graphics aligned with national campaigns.</li>
+                  <li>Ensured strict brand consistency across physical print and digital omni-channel distribution.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Item 4 (Left): Graphic Designer & Content Creator Intern - Politeknik LP3I -->
+            <div class="alt-item alt-item--left timeline-left">
+              <div class="alt-item__marker" aria-hidden="true"></div>
+              <div class="alt-item__content">
+                <h4 class="alt-item__role">Graphic Designer & Content Creator Intern</h4>
+                <p class="alt-item__company">Politeknik LP3I</p>
+                <p class="alt-item__brief">Pioneer institution in vocational education and career-ready professional development in Indonesia.</p>
+                <ul class="alt-item__bullets">
+                  <li>Spearheaded visual content creation for campus promotional campaigns and student recruitment drives.</li>
+                  <li>Produced kinetic social media videos, informative infocards, and digital motion graphics.</li>
+                  <li>Managed creative assets and visual documentation for academic webinars and campus workshops.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Item 5 (Right): Freelancing - Graphic Design & Video Editing -->
+            <div class="alt-item alt-item--right timeline-right">
+              <div class="alt-item__marker" aria-hidden="true"></div>
+              <div class="alt-item__content">
+                <h4 class="alt-item__role">Freelancing</h4>
+                <p class="alt-item__company">Graphic Design & Video Editing</p>
+                <p class="alt-item__brief">Independent creative practice delivering tailored multimedia solutions for commercial brands and digital ventures.</p>
+                <ul class="alt-item__bullets">
+                  <li>Delivered custom brand identity systems, marketing illustrations, and interactive UI prototypes for diverse clients.</li>
+                  <li>Directed end-to-end video post-production, motion graphics animation, and kinetic typography sequences.</li>
+                  <li>Maintained 100% on-time milestone delivery and direct stakeholder collaboration.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. PORTFOLIO SECTION (Interactive Mock-Database in script.js) -->
+    <section class="section portfolio-section" id="portfolio">
+      <div class="wrap portfolio-wrap">
+        <div class="portfolio-header">
+          <div class="portfolio-header__text">
+            <h2 class="portfolio-title-giant">Projects</h2>
+            <p class="portfolio-subheading">Selected Works & Case Studies</p>
+            <p class="portfolio-desc">
+              Explore client projects organized across graphic design, video editing, motion graphics, and UI/UX engineering.
+            </p>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="filter-tabs" id="filter-tabs" role="tablist" aria-label="Portfolio Filters">
+            <button class="filter-tab active" data-filter="All" role="tab" aria-selected="true">
+              All <span class="filter-tab__count" id="count-all">0</span>
+            </button>
+            <button class="filter-tab" data-filter="Graphic Design" role="tab" aria-selected="false">
+              Graphic Design <span class="filter-tab__count" id="count-graphic">0</span>
+            </button>
+            <button class="filter-tab" data-filter="Video Editing" role="tab" aria-selected="false">
+              Video Editing <span class="filter-tab__count" id="count-video">0</span>
+            </button>
+            <button class="filter-tab" data-filter="Motion Graphics" role="tab" aria-selected="false">
+              Motion Graphics <span class="filter-tab__count" id="count-motion">0</span>
+            </button>
+            <button class="filter-tab" data-filter="UI/UX Design" role="tab" aria-selected="false">
+              UI/UX Design <span class="filter-tab__count" id="count-uiux">0</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Dynamic Projects Grid -->
+        <div class="projects-grid" id="projects-grid" aria-live="polite">
+          <!-- Populated dynamically via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CONTACT / CLOSING SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="wrap">
+        <div class="contact-card">
+          <div class="contact-ambient" aria-hidden="true"></div>
+          
+          <div class="contact-content">
+            <div class="status-pill status-pill--lg">
+              <span class="status-dot"></span>
+              <span>Open to Opportunities</span>
+            </div>
+            <h2 class="section-title">Contact: Get in touch & Inquiries</h2>
+            <p class="contact-desc">
+              Have an upcoming project, a video production need, or a creative role to fill? Let's connect and discuss how we can bring it to life.
+            </p>
+
+            <div class="contact-actions">
+              <a class="btn-pill" href="mailto:alfiansyah.multimedia@gmail.com" id="copy-email-btn">
+                <span>Get in touch</span>
+                <span class="btn-pill__icon">
+                  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 8H12M12 8L8 4M12 8L8 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+              <span class="copy-hint" id="copy-hint">alfiansyah.multimedia@gmail.com</span>
+            </div>
+
+            <!-- Social Links Row -->
+            <div class="social-links">
+              <a class="social-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="social-link" href="https://behance.net" target="_blank" rel="noopener noreferrer">Behance</a>
+              <a class="social-link" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="social-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a class="social-link" href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Credits -->
+      <footer class="footer">
+        <div class="wrap footer__inner">
+          <p class="footer__copy">
+            &copy; 2026 Alfiansyah. All rights reserved. Crafted with clean code and design precision.
+          </p>
+          <a class="footer__back-top" href="#hero">
+            Back to top ↑
+          </a>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- PROJECT DETAIL VIEW (Modular Bento Grid, Max 4 Rows) -->
+  <section class="project-detail-view" id="project-detail-view" style="display: none;" aria-hidden="true">
+    <div class="wrap">
+      
+      <!-- Top Navigation & Return -->
+      <div class="detail-nav">
+        <button class="btn-back" id="btn-back-portfolio">
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.5 8H4.5M4.5 8L8.5 4M4.5 8L8.5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Back to Portfolio</span>
+        </button>
+
+        <div class="detail-breadcrumbs" id="detail-breadcrumbs">
+          <span>Portfolio</span>
+          <span class="sep">/</span>
+          <span id="detail-crumb-cat">Category</span>
+          <span class="sep">/</span>
+          <span class="active" id="detail-crumb-title">Project Title</span>
+        </div>
+      </div>
+
+      <!-- Detail Header / Hero -->
+      <header class="detail-hero">
+        <div class="detail-header-left">
+          <span class="detail-cat-badge" id="detail-category">Category</span>
+          <h1 class="detail-title" id="detail-title">Project Title</h1>
+          <p class="detail-desc" id="detail-desc">
+            Detailed project description and creative context.
+          </p>
+        </div>
+
+        <div class="detail-meta-card">
+          <div class="meta-item">
+            <span class="meta-label">Client</span>
+            <span class="meta-value" id="detail-client">Client Name</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Discipline</span>
+            <span class="meta-value" id="detail-discipline">Video & Visuals</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Year</span>
+            <span class="meta-value" id="detail-year">2024</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Tools</span>
+            <span class="meta-value" id="detail-tools">Premiere, Figma</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Gallery Header (Inside Wrap for Elegant Margins) -->
+      <div class="gallery-header">
+        <h3 class="gallery-title">Curated Gallery & Deliverables</h3>
+        <span class="gallery-hint">Click photos to inspect &bull; Click videos to play in dynamic aspect-ratio player</span>
+      </div>
+
+    </div>
+
+    <!-- Full-Width Edge-to-Edge Masonry Gallery (Pinterest Style) -->
+    <div class="detail-gallery-section">
+      <div class="gallery-container bento-grid" id="detail-bento-grid">
+        <!-- Populated dynamically via script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE LIGHTBOX MODAL -->
+  <div class="lightbox-modal" id="image-lightbox" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="image-lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="image-lightbox-close" aria-label="Close image lightbox">✕</button>
+      <div class="lightbox-image-wrapper">
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Full view preview">
+      </div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- VIDEO LIGHTBOX MODAL (DYNAMIC ASPECT-RATIO: 16:9 Landscape & 9:16 Vertical Shorts) -->
+  <div class="video-modal" id="video-lightbox" aria-hidden="true" role="dialog">
+    <div class="video-modal-backdrop" id="video-lightbox-backdrop"></div>
+    
+    <div class="video-modal-container" id="video-modal-container">
+      <button class="video-modal-close" id="video-lightbox-close" aria-label="Close video player">✕</button>
+      
+      <div class="video-frame-wrapper" id="video-frame-wrapper">
+        <iframe 
+          id="video-player-iframe"
+          src="" 
+          title="Video Player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      
+      <div class="video-modal-footer">
+        <span class="video-aspect-badge" id="video-aspect-badge">16:9</span>
+        <span class="video-title-label" id="video-title-label">Video Title</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Logic & Mock Database -->
+  <script src="script.js"></script>
+</body>
+</html>

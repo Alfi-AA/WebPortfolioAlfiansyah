@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1c1c24"/>
+      <stop offset="60%" stop-color="#121216"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </radialGradient>
+    <pattern id="pat" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect width="100%" height="100%" fill="url(#pat)"/>
+  <circle cx="337.5" cy="200" r="135" fill="#F42902" opacity="0.12" filter="blur(30px)"/>
+  <circle cx="112.5" cy="600" r="90" fill="#83FD80" opacity="0.05" filter="blur(25px)"/>
+  
+  <rect x="20" y="20" width="410" height="760" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" rx="8"/>
+  <line x1="20" y1="50" x2="430" y2="50" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  
+  <text x="35" y="40" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#83FD80" letter-spacing="1">MOTION GRAPHICS</text>
+  <text x="415" y="40" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#A1A1AA" text-anchor="end">ALFIANSYAH</text>
+  
+  <text x="225" y="400" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" font-weight="700" fill="#FDFDFF" text-anchor="middle">Thumb Health Edu</text>
+  <text x="225" y="428" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="500" fill="#A1A1AA" text-anchor="middle">DELIVERABLE ARCHIVE</text>
+  
+  <rect x="195" y="765" width="60" height="2" fill="#F42902" rx="1"/>
+</svg>

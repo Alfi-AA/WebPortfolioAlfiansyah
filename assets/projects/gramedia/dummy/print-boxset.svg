@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" width="480" height="600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1c1c24"/>
+      <stop offset="60%" stop-color="#121216"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </radialGradient>
+    <pattern id="pat" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect width="100%" height="100%" fill="url(#pat)"/>
+  <circle cx="360" cy="150" r="144" fill="#F42902" opacity="0.14" filter="blur(30px)"/>
+  <circle cx="120" cy="450" r="96" fill="#83FD80" opacity="0.06" filter="blur(25px)"/>
+  
+  <rect x="20" y="20" width="440" height="560" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1" rx="8"/>
+  <line x1="20" y1="50" x2="460" y2="50" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  
+  <text x="35" y="40" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#83FD80" letter-spacing="1">PT GRAMEDIA</text>
+  <text x="445" y="40" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#A1A1AA" text-anchor="end">ALFIANSYAH</text>
+  
+  <text x="240" y="300" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" font-weight="700" fill="#FDFDFF" text-anchor="middle">Print Boxset</text>
+  <text x="240" y="328" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="500" fill="#A1A1AA" text-anchor="middle">DELIVERABLE ARCHIVE</text>
+  
+  <rect x="210" y="565" width="60" height="2" fill="#F42902" rx="1"/>
+</svg>
