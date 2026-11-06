@@ -11,493 +11,254 @@ document.addEventListener('DOMContentLoaded', () => {
      ========================================================================== */
 
   const projectsData = [
-    {
-      id: "gramedia-visual-print",
-      title: "Gramedia Pustaka Utama — Visual & Print",
-      client: "PT Gramedia Pustaka Utama",
-      category: "Graphic Design",
-      year: "2024",
-      discipline: "Editorial & Print Design",
-      tools: "Photoshop, Illustrator, InDesign",
-      description: "Comprehensive editorial visual identity, publication cover typography, and high-impact marketing collaterals for nationwide literary releases and seasonal campaigns.",
-      thumbnail: "assets/projects/gramedia/dummy/thumb-visual-print.svg",
-      items: [
-        {
-          id: "gpu-01",
-          title: "Bestseller Book Cover & Dust Jacket",
-          type: "image",
-          aspectRatio: "16:9",
-          src: "assets/projects/gramedia/dummy/print-dust-jacket.svg",
-          caption: "Minimalist typographical dust jacket design with gold foil stamp accents."
-        },
-        {
-          id: "gpu-02",
-          title: "Literary Fiction Visual Spread",
-          type: "image",
-          aspectRatio: "9:16",
-          src: "assets/projects/gramedia/dummy/print-poster-vertical.svg",
-          caption: "Promotional vertical exhibition poster celebrating modern Indonesian authors."
-        },
-        {
-          id: "gpu-03",
-          title: "Author Monogram & Seal",
-          type: "image",
-          aspectRatio: "1:1",
-          src: "assets/projects/gramedia/dummy/print-monogram.svg",
-          caption: "Custom handcrafted vector monogram icon used across author publications."
-        },
-        {
-          id: "gpu-04",
-          title: "Typography & Grid Study",
-          type: "image",
-          aspectRatio: "9:16",
-          src: "assets/projects/gramedia/dummy/print-grid-study.svg",
-          caption: "Modular editorial grid exploration combining classical serifs and modern sans."
-        },
-        {
-          id: "gpu-05",
-          title: "Nationwide Book Launch Billboard",
-          type: "image",
-          aspectRatio: "16:9",
-          src: "assets/projects/gramedia/dummy/print-billboard.svg",
-          caption: "High-contrast out-of-home advertising banner for flagship store openings."
-        },
-        {
-          id: "gpu-06",
-          title: "Collectors Edition Box Slipcase",
-          type: "image",
-          aspectRatio: "4:5",
-          src: "assets/projects/gramedia/dummy/print-boxset.svg",
-          caption: "Textured hardcover box packaging with bespoke debossed line art."
-        },
-        {
-          id: "gpu-07",
-          title: "Gramedia Visual Brand Guidelines",
-          type: "image",
-          aspectRatio: "1:1",
-          src: "assets/projects/gramedia/dummy/print-brand-guidelines.svg",
-          caption: "Editorial guidelines manual for print consistency across publishing branches."
-        },
-        {
-          id: "gpu-08",
-          title: "Special Edition Bookmark Set",
-          type: "image",
-          aspectRatio: "4:5",
-          src: "assets/projects/gramedia/dummy/print-bookmarks.svg",
-          caption: "Limited run collectible foil bookmarks distributed at Jakarta Book Fair."
-        }
-      ]
-    },
-
-    {
-      id: "gramedia-book-promos",
-      title: "Gramedia Pustaka Utama — Book Promos",
-      client: "PT Gramedia Pustaka Utama",
-      category: "Video Editing",
-      year: "2024",
-      discipline: "Cinematic Trailers & Interviews",
-      tools: "Premiere Pro, DaVinci Resolve, After Effects",
-      description: "Cinematic release trailers, author spotlight interviews, and high-tension narrative teasers engineered for digital broadcasting and social media engagement.",
-      thumbnail: "assets/projects/gramedia/dummy/thumb-book-promos.svg",
-      items: [
-        {
-          id: "gpu-vid-01",
-          title: "Flagship Novel Release Trailer",
-          type: "video",
-          aspectRatio: "16:9",
-          src: "assets/projects/gramedia/dummy/video-novel-trailer.svg",
-          youtubeId: "dQw4w9WgXcQ", // Replace with actual Gramedia trailer ID
-          caption: "Paced trailer with custom sound design and atmospheric lighting."
-        },
-        {
-          id: "gpu-vid-02",
-          title: "Author Spotlight: Quick Fire Interview",
-          type: "video",
-          aspectRatio: "9:16",
-          src: "assets/projects/gramedia/dummy/video-author-reel.svg",
-          youtubeId: "ScMzIvxBSi4", // 9:16 vertical short format
-          caption: "Fast-paced vertical reel spotlighting the author's writing ritual."
-        },
-        {
-          id: "gpu-vid-03",
-          title: "Behind the Scenes: Editorial Printing Press",
-          type: "image",
-          aspectRatio: "1:1",
-          src: "assets/projects/gramedia/dummy/video-bts-printing.svg",
-          caption: "Color-graded photographic still from the offset printing floor."
-        },
-        {
-          id: "gpu-vid-04",
-          title: "Mystery Thriller 15s Teaser",
-          type: "video",
-          aspectRatio: "9:16",
-          src: "assets/projects/gramedia/dummy/video-thriller-teaser.svg",
-          youtubeId: "LXb3EKWsInQ",
-          caption: "Kinetic suspense reel featuring jump cuts and analog sound effects."
-        },
-        {
-          id: "gpu-vid-05",
-          title: "Jakarta Book Fair Recap Film",
-          type: "video",
-          aspectRatio: "16:9",
-          src: "assets/projects/gramedia/dummy/video-bookfair-recap.svg",
-          youtubeId: "M7lc1UVf-VE",
-          caption: "3-minute cinematic festival recap highlighting thousands of attendees."
-        },
-        {
-          id: "gpu-vid-06",
-          title: "Audiobook Launch Teaser",
-          type: "image",
-          aspectRatio: "4:5",
-          src: "assets/projects/gramedia/dummy/video-audiobook-still.svg",
-          caption: "Voice artist studio recording aesthetic photography frame."
-        },
-        {
-          id: "gpu-vid-07",
-          title: "Color Grading Breakdown: Studio Shoot",
-          type: "image",
-          aspectRatio: "1:1",
-          src: "assets/projects/gramedia/dummy/video-grading-node.svg",
-          caption: "DaVinci Resolve node graph and split-screen LUT grading preview."
-        },
-        {
-          id: "gpu-vid-08",
-          title: "Reader Testimonials Montage",
-          type: "video",
-          aspectRatio: "9:16",
-          src: "assets/projects/gramedia/dummy/video-reader-reaction.svg",
-          youtubeId: "5qap5aO4i9A",
-          caption: "Micro-interview reel cut for viral TikTok & Instagram Reels distribution."
-        }
-      ]
-    },
-
-    {
-      id: "oasis-luxury-reels",
-      title: "Oasis Genius Hospitality — Luxury Reels",
-      client: "Oasis Genius Hospitality",
-      category: "Video Editing",
-      year: "2023 — 2024",
-      discipline: "Luxury Travel & Pacing",
-      tools: "Premiere Pro, DaVinci Resolve",
-      description: "High-converting luxury hospitality reels, drone cinematography grading, resort promotional narratives, and immersive soundscapes designed for high-net-worth travelers.",
-      thumbnail: "assets/projects/oasis/dummy/thumb-luxury-reels.svg",
-      items: [
-        {
-          id: "oasis-01",
-          title: "Private Villa Morning Routine",
-          type: "video",
-          aspectRatio: "9:16",
-          src: "assets/projects/oasis/dummy/reel-villa-morning.svg",
-          youtubeId: "ScMzIvxBSi4", // 9:16 Vertical Reel
-          caption: "Smooth seamless transition reel showcasing private plunge pool and breakfast service."
-        },
-        {
-          id: "oasis-02",
-          title: "Cinematic Resort Aerial Masterpiece",
-          type: "video",
-          aspectRatio: "16:9",
-          src: "assets/projects/oasis/dummy/video-resort-drone.svg",
-          youtubeId: "LXb3EKWsInQ", // 16:9 Landscape Drone Showcase
-          caption: "4K Golden hour drone cinematography sweeping over tropical cliffs."
-        },
-        {
-          id: "oasis-03",
-          title: "Michelin-Starred Culinary Preview",
-          type: "image",
-          aspectRatio: "1:1",
-          src: "assets/projects/oasis/dummy/still-culinary-dish.svg",
-          caption: "Color-graded macro frame of signature tasting course presentation."
-        },
-        {
-          id: "oasis-04",
-          title: "Sunset Cocktail Mixology",
-          type: "video",
-          aspectRatio: "9:16",
-          src: "assets/projects/oasis/dummy/reel-mixology.svg",
-          youtubeId: "kXYiU_JCYtU", // 9:16 Vertical
-          caption: "Dynamic rhythm editing sync to live shaker audio and ambient lounge track."
-        },
-        {
-          id: "oasis-05",
-          title: "Wellness & Spa Sanctuary Experience",
-          type: "video",
-          aspectRatio: "16:9",
-          src: "assets/projects/oasis/dummy/video-spa-treatment.svg",
-          youtubeId: "M7lc1UVf-VE",
-          caption: "Meditative pacing highlighting holistic wellness retreats."
-        },
-        {
-          id: "oasis-06",
-          title: "Oceanfront Suite Architectural Study",
-          type: "image",
-          aspectRatio: "4:5",
-          src: "assets/projects/oasis/dummy/still-suite-interior.svg",
-          caption: "Symmetrical interior shot balancing natural island sunlight and timber textures."
-        },
-        {
-          id: "oasis-07",
-          title: "Guest Arrival & Welcome Ritual",
-          type: "video",
-          aspectRatio: "9:16",
-          src: "assets/projects/oasis/dummy/reel-arrival-ritual.svg",
-          youtubeId: "5qap5aO4i9A", // 9:16 Vertical
-          caption: "Warm hospitable greeting sequence captured with steady gimbal motion."
-        },
-        {
-          id: "oasis-08",
-          title: "Night Ambient Fire Pit Sessions",
-          type: "image",
-          aspectRatio: "1:1",
-          src: "assets/projects/oasis/dummy/still-firepit-night.svg",
-          caption: "Low-light cinema sensor test featuring warm ember reflections."
-        }
-      ]
-    },
-
-    {
-      id: "aha-commerce-ai-ads",
-      title: "AHA Commerce — AI Commercial Ads",
-      client: "AHA Commerce",
-      category: "Video Editing",
-      year: "2024",
-      discipline: "AI Video & Performance Marketing",
-      tools: "Runway Gen-AI, Premiere Pro, Midjourney, Topaz AI",
-      description: "Fast-paced AI-assisted commercial video ads engineered for e-commerce conversion, algorithmic viral loops, and high-retention performance marketing.",
-      thumbnail: "assets/projects/aha-commerce/dummy/thumb-ai-ads.svg",
-      items: [
-        {
-          id: "aha-01",
-          title: "AI Product Deconstruction Hook",
-          type: "video",
-          aspectRatio: "9:16",
-          src: "assets/projects/aha-commerce/dummy/ad-ai-deconstruction.svg",
-          youtubeId: "ScMzIvxBSi4", // 9:16 Vertical Ad
-          caption: "First 3 seconds hook generated via Runway Gen-2 with explosive visual pacing."
-        },
-        {
-          id: "aha-02",
-          title: "Brand Commercial: Synthetic Future",
-          type: "video",
-          aspectRatio: "16:9",
-          src: "assets/projects/aha-commerce/dummy/ad-synthetic-future.svg",
-          youtubeId: "dQw4w9WgXcQ",
-          caption: "Futuristic brand showcase merging live product plates with AI neural backdrops."
-        },
-        {
-          id: "aha-03",
-          title: "E-Commerce ROAS Performance Test",
-          type: "image",
-          aspectRatio: "1:1",
-          src: "assets/projects/aha-commerce/dummy/metric-performance.svg",
-          caption: "Creative A/B testing dashboard showing 4.2x ROAS lift on AI variations."
-        },
-        {
-          id: "aha-04",
-          title: "Dynamic Fashion Morph Reel",
-          type: "video",
-          aspectRatio: "9:16",
-          src: "assets/projects/aha-commerce/dummy/ad-fashion-morph.svg",
-          youtubeId: "kXYiU_JCYtU",
-          caption: "Seamless outfit transition powered by AI frame interpolation and kinetic audio."
-        },
-        {
-          id: "aha-05",
-          title: "Tech Gadget AI Feature Breakdown",
-          type: "video",
-          aspectRatio: "16:9",
-          src: "assets/projects/aha-commerce/dummy/ad-gadget-breakdown.svg",
-          youtubeId: "M7lc1UVf-VE",
-          caption: "3D CAD model blended with AI smoke particles and bold typography."
-        },
-        {
-          id: "aha-06",
-          title: "Prompt Engineering & Asset Generation",
-          type: "image",
-          aspectRatio: "4:5",
-          src: "assets/projects/aha-commerce/dummy/still-prompt-board.svg",
-          caption: "Visual moodboard and token weights documentation for consistent lighting."
-        },
-        {
-          id: "aha-07",
-          title: "Direct Response Conversion Creative",
-          type: "video",
-          aspectRatio: "9:16",
-          src: "assets/projects/aha-commerce/dummy/ad-direct-response.svg",
-          youtubeId: "5qap5aO4i9A",
-          caption: "High-urgency flash sale format engineered specifically for Shopee & TikTok Shop."
-        },
-        {
-          id: "aha-08",
-          title: "Neural Upscaling Comparison",
-          type: "image",
-          aspectRatio: "1:1",
-          src: "assets/projects/aha-commerce/dummy/still-upscaling-split.svg",
-          caption: "Side-by-side fidelity comparison before and after Topaz Video AI sharpening."
-        }
-      ]
-    },
-
-    {
-      id: "health-edu-motion",
-      title: "Health Edu Pop-Up & Animation",
-      client: "Freelance Creative / Health Agency",
-      category: "Motion Graphics",
-      year: "2023",
-      discipline: "Kinetic Motion & Vector Systems",
-      tools: "After Effects, Illustrator, Lottie",
-      description: "Interactive educational vector motion design, dynamic infographic pop-up elements, kinetic typography, and character animation explaining critical health literacy concepts.",
-      thumbnail: "assets/projects/freelance/dummy/thumb-health-edu.svg",
-      items: [
-        {
-          id: "health-01",
-          title: "Immune Response Kinetic Flow",
-          type: "video",
-          aspectRatio: "16:9",
-          src: "assets/projects/freelance/dummy/motion-immune-flow.svg",
-          youtubeId: "M7lc1UVf-VE",
-          caption: "Smooth 60fps vector animation explaining antibody neutralization."
-        },
-        {
-          id: "health-02",
-          title: "Microbiology Pop-Up Card Interaction",
-          type: "image",
-          aspectRatio: "9:16",
-          src: "assets/projects/freelance/dummy/motion-popup-card.svg",
-          caption: "Simulated paper-cut pop-up mechanism engineered with 3D layer nulls."
-        },
-        {
-          id: "health-03",
-          title: "Animated Character Health Mascot",
-          type: "image",
-          aspectRatio: "1:1",
-          src: "assets/projects/freelance/dummy/motion-mascot-rig.svg",
-          caption: "Rigged vector character with full emotional expression cycle."
-        },
-        {
-          id: "health-04",
-          title: "Public Health Safety Explainer Reel",
-          type: "video",
-          aspectRatio: "9:16",
-          src: "assets/projects/freelance/dummy/motion-safety-reel.svg",
-          youtubeId: "ScMzIvxBSi4",
-          caption: "Bite-sized mobile animation teaching proper hygiene protocols in schools."
-        },
-        {
-          id: "health-05",
-          title: "Medical Data Infographic Loop",
-          type: "video",
-          aspectRatio: "16:9",
-          src: "assets/projects/freelance/dummy/motion-data-loop.svg",
-          youtubeId: "LXb3EKWsInQ",
-          caption: "Real-time chart telemetry with liquid organic line strokes."
-        },
-        {
-          id: "health-06",
-          title: "Typography Layout: Health Terms",
-          type: "image",
-          aspectRatio: "4:5",
-          src: "assets/projects/freelance/dummy/motion-type-poster.svg",
-          caption: "Bold graphic typography poster balancing Indonesian and scientific naming."
-        },
-        {
-          id: "health-07",
-          title: "Lottie Micro-Interaction UI Icons",
-          type: "image",
-          aspectRatio: "1:1",
-          src: "assets/projects/freelance/dummy/motion-lottie-icons.svg",
-          caption: "Lightweight JSON vector icon animations exported for mobile web apps."
-        },
-        {
-          id: "health-08",
-          title: "Interactive Web Pop-Up Storyboard",
-          type: "image",
-          aspectRatio: "4:5",
-          src: "assets/projects/freelance/dummy/motion-storyboard.svg",
-          caption: "Pre-production sequential keyframes demonstrating transition physics."
-        }
-      ]
-    },
-
-    {
-      id: "gymflow-ui-ux",
-      title: "GymFlow App & E-Catalog Web",
-      client: "Freelance Creative / Fitness Brand",
-      category: "UI/UX Design",
-      year: "2024",
-      discipline: "Product Design & Frontend Prototyping",
-      tools: "Figma, HTML5, CSS3, Vanilla JS",
-      description: "High-contrast dark mode fitness tracking interface and responsive luxury e-catalog web experience featuring kinetic interactions and frictionless user onboarding.",
-      thumbnail: "assets/projects/ui-ux/dummy/thumb-gymflow.svg",
-      items: [
-        {
-          id: "gym-01",
-          title: "GymFlow Dashboard & Workout Monitor",
-          type: "image",
-          aspectRatio: "16:9",
-          src: "assets/projects/ui-ux/dummy/ui-dashboard-wide.svg",
-          caption: "High-contrast dark UI dashboard with real-time biometric telemetry visualization."
-        },
-        {
-          id: "gym-02",
-          title: "Mobile Native Workout Log Screen",
-          type: "image",
-          aspectRatio: "9:16",
-          src: "assets/projects/ui-ux/dummy/ui-mobile-screen.svg",
-          caption: "iOS 18 human interface guidelines compliant vertical workout tracker interface."
-        },
-        {
-          id: "gym-03",
-          title: "Design System: Typography & Tokens",
-          type: "image",
-          aspectRatio: "1:1",
-          src: "assets/projects/ui-ux/dummy/ui-design-tokens.svg",
-          caption: "Scalable design token hierarchy adhering strictly to 8pt spatial rhythm."
-        },
-        {
-          id: "gym-04",
-          title: "Interactive E-Catalog Mobile Experience",
-          type: "image",
-          aspectRatio: "9:16",
-          src: "assets/projects/ui-ux/dummy/ui-ecatalog-mobile.svg",
-          caption: "Fluid luxury sportswear catalog checkout with single-thumb ergonomics."
-        },
-        {
-          id: "gym-05",
-          title: "Interactive Prototype Walkthrough",
-          type: "video",
-          aspectRatio: "16:9",
-          src: "assets/projects/ui-ux/dummy/video-prototype-flow.svg",
-          youtubeId: "dQw4w9WgXcQ",
-          caption: "High-fidelity Figma screen flow demonstration with micro-interaction feedback."
-        },
-        {
-          id: "gym-06",
-          title: "User Journey & Usability Matrix",
-          type: "image",
-          aspectRatio: "4:5",
-          src: "assets/projects/ui-ux/dummy/ui-user-journey.svg",
-          caption: "Friction analysis and drop-off reduction architecture diagram."
-        },
-        {
-          id: "gym-07",
-          title: "Interactive Web Component Library",
-          type: "image",
-          aspectRatio: "1:1",
-          src: "assets/projects/ui-ux/dummy/ui-components.svg",
-          caption: "Zero-dependency Vanilla JS custom components for sliders, toggles, and modals."
-        },
-        {
-          id: "gym-08",
-          title: "Wearable Smartwatch Companion App",
-          type: "image",
-          aspectRatio: "4:5",
-          src: "assets/projects/ui-ux/dummy/ui-smartwatch-glance.svg",
-          caption: "OLED optimized glanceable wrist telemetry display with neon green micro-accents."
-        }
-      ]
-    }
-  ];
+  {
+    id: "gramedia-visual-print",
+    title: "Gramedia Pustaka Utama — Visual & Print",
+    client: "PT Gramedia Pustaka Utama",
+    category: "Graphic Design",
+    year: "2024",
+    discipline: "Editorial & Print Design",
+    tools: "Photoshop, Illustrator, InDesign",
+    description: "Comprehensive editorial visual identity, publication cover typography, and high-impact marketing collaterals for nationwide literary releases and seasonal campaigns.",
+    thumbnail: "assets/projects/gramedia/dummy/thumb-visual-print.svg",
+    items: [
+      { id: "gpu-01", title: "Bestseller Book Cover & Dust Jacket", type: "image", aspectRatio: "16:9", src: "assets/projects/gramedia/dummy/print-dust-jacket.svg", caption: "Minimalist typographical dust jacket design." },
+      { id: "gpu-02", title: "Literary Fiction Visual Spread", type: "image", aspectRatio: "9:16", src: "assets/projects/gramedia/dummy/print-poster-vertical.svg", caption: "Promotional vertical exhibition poster." },
+      { id: "gpu-03", title: "Author Monogram & Seal", type: "image", aspectRatio: "1:1", src: "assets/projects/gramedia/dummy/print-monogram.svg", caption: "Custom handcrafted vector monogram icon." },
+      { id: "gpu-04", title: "Typography & Grid Study", type: "image", aspectRatio: "9:16", src: "assets/projects/gramedia/dummy/print-grid-study.svg", caption: "Modular editorial grid exploration." },
+      { id: "gpu-05", title: "Nationwide Book Launch Billboard", type: "image", aspectRatio: "16:9", src: "assets/projects/gramedia/dummy/print-billboard.svg", caption: "High-contrast out-of-home advertising banner." },
+      { id: "gpu-06", title: "Collectors Edition Box Slipcase", type: "image", aspectRatio: "4:5", src: "assets/projects/gramedia/dummy/print-boxset.svg", caption: "Textured hardcover box packaging." },
+      { id: "gpu-07", title: "Gramedia Visual Brand Guidelines", type: "image", aspectRatio: "1:1", src: "assets/projects/gramedia/dummy/print-brand-guidelines.svg", caption: "Editorial guidelines manual for print consistency." },
+      { id: "gpu-08", title: "Special Edition Bookmark Set", type: "image", aspectRatio: "4:5", src: "assets/projects/gramedia/dummy/print-bookmarks.svg", caption: "Limited run collectible foil bookmarks." }
+    ]
+  },
+  {
+    id: "aha-commerce-ai-ads",
+    title: "AHA Commerce – AI Video Editor",
+    client: "AHA Commerce",
+    category: "Video Editing",
+    year: "2024",
+    discipline: "AI Commercial Video Synthesis & Performance Ads",
+    tools: "Generative AI, Premiere Pro, CapCut, After Effects",
+    description: "Rangkaian video iklan komersial e-commerce berbasis generative AI visual synthesis dan dynamic vertical storytelling untuk memaksimalkan retensi serta konversi penjualan.",
+    thumbnail: "https://img.youtube.com/vi/whxofEELUFA/hqdefault.jpg",
+    items: [
+      {
+        id: "aha-01",
+        title: "Vibe AI Video Tetangga Suuzon",
+        type: "video",
+        aspectRatio: "9:16",
+        platform: "instagram",
+        instagramId: "Dc5FaA7zNL2",
+        src: "assets/projects/aha-commerce/dummy/ad-ai-tetangga-9-16.svg",
+        caption: "Vibe AI Video Tetangga Suuzon — Instagram Reel."
+      },
+      {
+        id: "aha-02",
+        title: "Vibe AI Video Product AXAM",
+        type: "video",
+        aspectRatio: "9:16",
+        platform: "youtube",
+        youtubeId: "whxofEELUFA",
+        src: "https://img.youtube.com/vi/whxofEELUFA/hqdefault.jpg",
+        caption: "Vibe AI Video Product AXAM — YouTube Shorts."
+      },
+      {
+        id: "aha-03",
+        title: "Vibe AI Video Product ALJA",
+        type: "video",
+        aspectRatio: "9:16",
+        platform: "youtube",
+        youtubeId: "5f7PdTITq3o",
+        src: "https://img.youtube.com/vi/5f7PdTITq3o/hqdefault.jpg",
+        caption: "Vibe AI Video Product ALJA — YouTube Shorts."
+      },
+      {
+        id: "aha-04",
+        title: "Vibe AI Video Product ESNC",
+        type: "video",
+        aspectRatio: "9:16",
+        platform: "youtube",
+        youtubeId: "zviGlqBlSCY",
+        src: "https://img.youtube.com/vi/zviGlqBlSCY/hqdefault.jpg",
+        caption: "Vibe AI Video Product ESNC — YouTube Shorts."
+      },
+      {
+        id: "aha-05",
+        title: "Vibe AI Video Product MoonDae",
+        type: "video",
+        aspectRatio: "9:16",
+        platform: "youtube",
+        youtubeId: "OW6c64QV3c0",
+        src: "https://img.youtube.com/vi/OW6c64QV3c0/hqdefault.jpg",
+        caption: "Vibe AI Video Product MoonDae — YouTube Shorts."
+      },
+      {
+        id: "aha-06",
+        title: "Vibe AI Video Product 3M",
+        type: "video",
+        aspectRatio: "9:16",
+        platform: "youtube",
+        youtubeId: "AHR-XV4CBjM",
+        src: "https://img.youtube.com/vi/AHR-XV4CBjM/hqdefault.jpg",
+        caption: "Vibe AI Video Product 3M — YouTube Shorts."
+      }
+    ]
+  },
+  {
+    id: "oasis-luxury-reels",
+    title: "Oasis Genius Hospitality – Video Editor",
+    client: "PT. Oasis Genius Hospitality",
+    category: "Video Editing",
+    year: "2024",
+    discipline: "Luxury Resort Short-Form Showcase & Color Grading",
+    tools: "Premiere Pro, DaVinci Resolve, CapCut",
+    description: "Koleksi video estetis dan reels sinematik untuk jaringan resort dan hotel mewah, menonjolkan keindahan arsitektur, ambience elegan, serta detail pengalaman hospitality premium.",
+    thumbnail: "https://img.youtube.com/vi/cab8uNCkm68/hqdefault.jpg",
+    items: [
+      { id: "oasis-01", title: "Video Rudian Hotel Aesthetic", type: "video", aspectRatio: "9:16", platform: "youtube", youtubeId: "cab8uNCkm68", src: "https://img.youtube.com/vi/cab8uNCkm68/hqdefault.jpg", caption: "Video Rudian Hotel Aesthetic — YouTube Shorts." },
+      { id: "oasis-02", title: "Video Voyara Hotel Aesthetic", type: "video", aspectRatio: "9:16", platform: "youtube", youtubeId: "jk2jozS6UGc", src: "https://img.youtube.com/vi/jk2jozS6UGc/hqdefault.jpg", caption: "Video Voyara Hotel Aesthetic — YouTube Shorts." },
+      { id: "oasis-03", title: "Video Suba Hotel Aesthetic", type: "video", aspectRatio: "9:16", platform: "youtube", youtubeId: "crPyFFNUOa8", src: "https://img.youtube.com/vi/crPyFFNUOa8/hqdefault.jpg", caption: "Video Suba Hotel Aesthetic — YouTube Shorts." },
+      { id: "oasis-04", title: "Video Rudian Hotel Aesthetic (Part 2)", type: "video", aspectRatio: "9:16", platform: "youtube", youtubeId: "qliLu-h-nmA", src: "https://img.youtube.com/vi/qliLu-h-nmA/hqdefault.jpg", caption: "Video Rudian Hotel Aesthetic — YouTube Shorts." },
+      { id: "oasis-05", title: "Video VTAM Aesthetic", type: "video", aspectRatio: "9:16", platform: "youtube", youtubeId: "mrOHKbqwT8Q", src: "https://img.youtube.com/vi/mrOHKbqwT8Q/hqdefault.jpg", caption: "Video VTAM Aesthetic — YouTube Shorts." },
+      { id: "oasis-06", title: "Video Rudian Hotel Aesthetic (Part 3)", type: "video", aspectRatio: "9:16", platform: "youtube", youtubeId: "kIhYZcSFeCU", src: "https://img.youtube.com/vi/kIhYZcSFeCU/hqdefault.jpg", caption: "Video Rudian Hotel Aesthetic — YouTube Shorts." },
+      { id: "oasis-07", title: "Video VTAM Aesthetic (Part 2)", type: "video", aspectRatio: "9:16", platform: "youtube", youtubeId: "U2EVrC94Fs0", src: "https://img.youtube.com/vi/U2EVrC94Fs0/hqdefault.jpg", caption: "Video VTAM Aesthetic — YouTube Shorts." },
+      { id: "oasis-08", title: "Video Mutiara Hotel Aesthetic", type: "video", aspectRatio: "9:16", platform: "youtube", youtubeId: "z5DsZ77hUcw", src: "https://img.youtube.com/vi/z5DsZ77hUcw/hqdefault.jpg", caption: "Video Mutiara Hotel Aesthetic — YouTube Shorts." }
+    ]
+  },
+  {
+    id: "gramedia-book-promos",
+    title: "Gramedia – Book Promotion",
+    client: "PT Gramedia Asri Media",
+    category: "Video Editing",
+    year: "2024",
+    discipline: "Social Media Reels & Literary Teasers",
+    tools: "Premiere Pro, After Effects, CapCut",
+    description: "Rangkaian video promosi buku dan literatur nasional format Instagram Reels, memadukan hook visual yang kuat, pacing dinamis, dan narasi personal untuk meningkatkan interaksi pembaca.",
+    thumbnail: "assets/projects/gramedia/dummy/thumb-book-promos.svg",
+    items: [
+      { id: "gbp-01", title: "Cerita ke temen", type: "video", aspectRatio: "9:16", platform: "instagram", instagramId: "DK_lelePdFd", src: "assets/projects/gramedia/dummy/video-novel-trailer.svg", caption: "Cerita ke temen — Instagram Reels." },
+      { id: "gbp-02", title: "Go Perpetuate", type: "video", aspectRatio: "9:16", platform: "instagram", instagramId: "DK8bs2zvPC2", src: "assets/projects/gramedia/dummy/video-author-reel.svg", caption: "Go Perpetuate — Instagram Reels." },
+      { id: "gbp-03", title: "Waktu untuk Sendiri", type: "video", aspectRatio: "9:16", platform: "instagram", instagramId: "DLPeuPIPeY2", src: "assets/projects/gramedia/dummy/video-bts-printing.svg", caption: "Waktu untuk Sendiri — Instagram Reels." },
+      { id: "gbp-04", title: "Surat untuk Putriku", type: "video", aspectRatio: "9:16", platform: "instagram", instagramId: "DKqhaRJvspN", src: "assets/projects/gramedia/dummy/video-thriller-teaser.svg", caption: "Surat untuk Putriku — Instagram Reels." },
+      { id: "gbp-05", title: "Rich Dad Poor Dad", type: "video", aspectRatio: "9:16", platform: "instagram", instagramId: "DKdc1gxTUmC", src: "assets/projects/gramedia/dummy/video-bookfair-recap.svg", caption: "Rich Dad Poor Dad — Instagram Reels." },
+      { id: "gbp-06", title: "Focus on What Matters", type: "video", aspectRatio: "9:16", platform: "instagram", instagramId: "DKY5l3Ev-Gl", src: "assets/projects/gramedia/dummy/video-audiobook-still.svg", caption: "Focus on What Matters — Instagram Reels." },
+      { id: "gbp-07", title: "We Need to Save Money", type: "video", aspectRatio: "9:16", platform: "instagram", instagramId: "DMcQLDGPZLp", src: "assets/projects/gramedia/dummy/video-grading-node.svg", caption: "We Need to Save Money — Instagram Reels." },
+      { id: "gbp-08", title: "Future Financial Freedom", type: "video", aspectRatio: "9:16", platform: "instagram", instagramId: "DMp2otgv_pF", src: "assets/projects/gramedia/dummy/video-reader-reaction.svg", caption: "Future Financial Freedom — Instagram Reels." }
+    ]
+  },
+  {
+    id: "puspo-budoyo-documentary",
+    title: "Rumah Budaya Nusantara Puspo Budoyo",
+    client: "Tugas Kuliah / Dokumenter Budaya",
+    category: "Video Editing",
+    year: "2024",
+    discipline: "Documentary Production, Camera & Editing",
+    tools: "Premiere Pro, Camera Rig, DaVinci Resolve",
+    description: "Projek peliputan video dokumenter mengenai Rumah Budaya Nusantara Puspo Budoyo. Berperan langsung sebagai tim produksi lintas divisi, memegang peran sebagai kameramen sekaligus video editor utama dalam menyusun cerita visual kebudayaan nusantara.",
+    thumbnail: "https://img.youtube.com/vi/pkqmVXY1aB0/maxresdefault.jpg",
+    items: [
+      {
+        id: "pbd-01",
+        title: "Dokumenter Rumah Budaya Nusantara Puspo Budoyo",
+        type: "video",
+        aspectRatio: "16:9",
+        platform: "youtube",
+        youtubeId: "pkqmVXY1aB0",
+        src: "https://img.youtube.com/vi/pkqmVXY1aB0/maxresdefault.jpg",
+        caption: "Official Documentary Video: Rumah Budaya Nusantara Puspo Budoyo."
+      }
+    ]
+  },
+  {
+    id: "ssk-grand-opening",
+    title: "SSK Grand Opening - Official Documentation",
+    client: "PT SSK (Freelance Project)",
+    category: "Video Editing",
+    year: "2024",
+    discipline: "Event Documentation & Commercial Editing",
+    tools: "Premiere Pro, DaVinci Resolve, After Effects",
+    description: "Pekerjaan freelance sebagai video editor untuk perayaan Grand Opening perusahaan. Bertanggung jawab memilah seluruh footage acara yang tersedia, merancang pacing dramatis, serta merangkai video utuh yang menarik dan berkesan.",
+    thumbnail: "https://img.youtube.com/vi/IqD7u1PMGFI/maxresdefault.jpg",
+    items: [
+      {
+        id: "ssk-01",
+        title: "SSK Grand Opening — Official Documentation",
+        type: "video",
+        aspectRatio: "16:9",
+        platform: "youtube",
+        youtubeId: "IqD7u1PMGFI",
+        src: "https://img.youtube.com/vi/IqD7u1PMGFI/maxresdefault.jpg",
+        caption: "Official Commercial Documentation Video: SSK Grand Opening."
+      }
+    ]
+  },
+  {
+    id: "dodomatter-brand-ad",
+    title: "DODOMATTER",
+    client: "Program Hibah Wirausaha Kampus & Brand Pribadi",
+    category: "Video Editing",
+    year: "2024",
+    discipline: "Product Advertising & Commercial Video",
+    tools: "Premiere Pro, After Effects",
+    description: "Projek usaha produk pakaian hasil seleksi pendanaan hibah program kewirausahaan kampus. Bertindak sebagai video editor khusus untuk pembuatan video iklan komersial peluncuran produk.",
+    thumbnail: "https://img.youtube.com/vi/pLyjfleVld4/maxresdefault.jpg",
+    items: [
+      {
+        id: "dodo-01",
+        title: "DODOMATTER Commercial Product Ad",
+        type: "video",
+        aspectRatio: "16:9",
+        platform: "youtube",
+        youtubeId: "pLyjfleVld4",
+        src: "https://img.youtube.com/vi/pLyjfleVld4/maxresdefault.jpg",
+        caption: "Official Commercial Ad Video: DODOMATTER."
+      }
+    ]
+  },
+  {
+    id: "health-edu-motion",
+    title: "Health Edu Pop-Up & Animation",
+    client: "Independent / Healthcare Initiative",
+    category: "Motion Graphics",
+    year: "2024",
+    discipline: "Kinetic Vector Motion & Infographics",
+    tools: "After Effects, Illustrator, Lottie",
+    description: "Interactive educational vector motion design, dynamic infographic pop-up elements, kinetic typography, and character animation explaining critical health literacy concepts.",
+    thumbnail: "assets/projects/freelance/dummy/thumb-health-edu.svg",
+    items: [
+      { id: "health-01", title: "Immune Response Kinetic Flow", type: "video", aspectRatio: "16:9", src: "assets/projects/freelance/dummy/motion-immune-flow.svg", caption: "Kinetic infographic animation." },
+      { id: "health-02", title: "Microbiology Pop-Up Card Interaction", type: "image", aspectRatio: "9:16", src: "assets/projects/freelance/dummy/motion-popup-card.svg", caption: "Digital pop-up book simulation." },
+      { id: "health-03", title: "Animated Character Health Mascot", type: "image", aspectRatio: "1:1", src: "assets/projects/freelance/dummy/motion-mascot-rig.svg", caption: "Vector character rig." },
+      { id: "health-04", title: "Public Health Safety Explainer Reel", type: "video", aspectRatio: "9:16", src: "assets/projects/freelance/dummy/motion-safety-reel.svg", caption: "Short-form public service reel." },
+      { id: "health-05", title: "Medical Data Infographic Loop", type: "video", aspectRatio: "16:9", src: "assets/projects/freelance/dummy/motion-data-loop.svg", caption: "Seamless analytical motion loop." },
+      { id: "health-06", title: "Typography Layout: Health Terms", type: "image", aspectRatio: "4:5", src: "assets/projects/freelance/dummy/motion-type-poster.svg", caption: "Educational typography poster." },
+      { id: "health-07", title: "Lottie Micro-Interaction UI Icons", type: "image", aspectRatio: "1:1", src: "assets/projects/freelance/dummy/motion-lottie-icons.svg", caption: "Lightweight JSON vector animations." },
+      { id: "health-08", title: "Interactive Web Pop-Up Storyboard", type: "image", aspectRatio: "4:5", src: "assets/projects/freelance/dummy/motion-storyboard.svg", caption: "Storyboard workflow." }
+    ]
+  },
+  {
+    id: "gymflow-ui-ux",
+    title: "GymFlow App & E-Catalog Web",
+    client: "GymFlow Fitness Co.",
+    category: "UI/UX Design",
+    year: "2024",
+    discipline: "Mobile App & Responsive Web Design",
+    tools: "Figma, FigJam, Protopie",
+    description: "High-contrast dark mode fitness tracking interface and responsive luxury e-catalog web experience featuring kinetic interactions and frictionless user onboarding.",
+    thumbnail: "assets/projects/ui-ux/dummy/thumb-gymflow.svg",
+    items: [
+      { id: "gym-01", title: "GymFlow Desktop Analytics Dashboard", type: "image", aspectRatio: "16:9", src: "assets/projects/ui-ux/dummy/ui-dashboard-wide.svg", caption: "Desktop trainer monitoring suite." },
+      { id: "gym-02", title: "Mobile Workout Tracking Screen", type: "image", aspectRatio: "9:16", src: "assets/projects/ui-ux/dummy/ui-mobile-screen.svg", caption: "High-contrast dark mode training tracker." },
+      { id: "gym-03", title: "GymFlow Design Token System", type: "image", aspectRatio: "1:1", src: "assets/projects/ui-ux/dummy/ui-design-tokens.svg", caption: "Scalable typography, color palette, and spacing tokens." },
+      { id: "gym-04", title: "Interactive E-Catalog Mobile Experience", type: "image", aspectRatio: "9:16", src: "assets/projects/ui-ux/dummy/ui-ecatalog-mobile.svg", caption: "Direct-to-consumer apparel store." },
+      { id: "gym-05", title: "Interactive Prototype Animation Flow", type: "video", aspectRatio: "16:9", src: "assets/projects/ui-ux/dummy/video-prototype-flow.svg", caption: "Micro-interaction walkthrough." },
+      { id: "gym-06", title: "Onboarding Flow & User Journey", type: "image", aspectRatio: "4:5", src: "assets/projects/ui-ux/dummy/ui-user-journey.svg", caption: "User onboarding funnel." },
+      { id: "gym-07", title: "Modular UI Component Library", type: "image", aspectRatio: "1:1", src: "assets/projects/ui-ux/dummy/ui-components.svg", caption: "Atomic Figma components." },
+      { id: "gym-08", title: "Smartwatch Glance Interface", type: "image", aspectRatio: "4:5", src: "assets/projects/ui-ux/dummy/ui-smartwatch-glance.svg", caption: "WatchOS companion UI." }
+    ]
+  }
+];
 
   /* ==========================================================================
      2. AESTHETIC SVG PLACEHOLDER GENERATOR
@@ -548,8 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <text x="35" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#83FD80" letter-spacing="2">${cleanCat}</text>
         <text x="${width - 35}" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#71717A" text-anchor="end">${cleanClient}</text>
         
-        <text x="${width / 2}" y="${height / 2 - 8}" font-family="'Plus Jakarta Sans', sans-serif" font-size="${width > 500 ? 20 : 16}" font-weight="700" fill="#FDFDFF" text-anchor="middle">${cleanTitle}</text>
-        <text x="${width / 2}" y="${height / 2 + 18}" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500" fill="#A1A1AA" text-anchor="middle">ASPECT RATIO [${aspectRatio}]</text>
+        <text x="${width / 2}" y="${height / 2 + 6}" font-family="'Plus Jakarta Sans', sans-serif" font-size="${width > 500 ? 22 : 18}" font-weight="700" fill="#FDFDFF" text-anchor="middle">${cleanTitle}</text>
         
         <rect x="${width / 2 - 25}" y="${height - 45}" width="50" height="2" fill="#F42902"/>
       </svg>
@@ -747,6 +507,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Render Bento Grid Items
     detailBentoGrid.innerHTML = '';
+    detailBentoGrid.classList.remove('is-single-player');
+
+    // Check if project should use flex grid for centered trailing items (e.g. AHA Commerce: 4 on row 1, 2 centered on row 2)
+    const isUniform = project.items.every(i => i.aspectRatio === project.items[0].aspectRatio);
+    const useFlexGrid = isUniform && project.items.length > 3;
+
+    if (useFlexGrid) {
+      detailBentoGrid.classList.add('is-flex-grid');
+      detailBentoGrid.style.columnCount = '';
+      detailBentoGrid.style.maxWidth = '1600px';
+      detailBentoGrid.style.margin = '0 auto';
+    } else if (project.items.length === 1) {
+      detailBentoGrid.classList.remove('is-flex-grid');
+      detailBentoGrid.style.columnCount = '1';
+      detailBentoGrid.style.maxWidth = '1060px';
+      detailBentoGrid.style.margin = '0 auto';
+    } else if (project.items.length === 2) {
+      detailBentoGrid.classList.remove('is-flex-grid');
+      detailBentoGrid.style.columnCount = '2';
+      detailBentoGrid.style.maxWidth = '1200px';
+      detailBentoGrid.style.margin = '0 auto';
+    } else if (project.items.length === 3) {
+      detailBentoGrid.classList.remove('is-flex-grid');
+      detailBentoGrid.style.columnCount = '3';
+      detailBentoGrid.style.maxWidth = '1400px';
+      detailBentoGrid.style.margin = '0 auto';
+    } else {
+      detailBentoGrid.classList.remove('is-flex-grid');
+      detailBentoGrid.style.columnCount = '';
+      detailBentoGrid.style.maxWidth = '100%';
+      detailBentoGrid.style.margin = '0';
+    }
 
     project.items.forEach(item => {
       const bentoItem = document.createElement('div');
@@ -771,7 +563,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Icon for type
       const isVideo = item.type === 'video';
       const playButtonHtml = isVideo ? `
-        <div class="bento-item__play-btn" title="Play Video in Dynamic Lightbox">
+        <div class="bento-item__play-btn" title="Play Video">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M8 5v14l11-7z"/>
           </svg>
@@ -808,7 +600,6 @@ document.addEventListener('DOMContentLoaded', () => {
         ${playButtonHtml}
         ${typeIconHtml}
         <div class="bento-item__pill">
-          <span class="bento-item__pill-tag">${item.aspectRatio}</span>
           <span>${item.title}</span>
         </div>
       `;
@@ -843,6 +634,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Return to Portfolio Button Handler
   btnBackPortfolio.addEventListener('click', () => {
+    detailBentoGrid.innerHTML = '';
+    detailBentoGrid.classList.remove('is-flex-grid');
+    detailBentoGrid.style.columnCount = '';
+    detailBentoGrid.style.maxWidth = '';
+    detailBentoGrid.style.margin = '';
     projectDetailView.style.display = 'none';
     projectDetailView.setAttribute('aria-hidden', 'true');
     mainContent.style.display = 'block';
@@ -874,9 +670,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     videoTitleLabel.textContent = item.title;
 
-    // Embed YouTube with autoplay
-    const ytId = item.youtubeId || 'dQw4w9WgXcQ';
-    videoPlayerIframe.src = `https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1`;
+    // Platform embed handling (Instagram Reel vs YouTube)
+    if (item.platform === 'instagram' || item.instagramId) {
+      const igId = item.instagramId || (item.src && item.src.match(/reel\/([^/?]+)/) ? item.src.match(/reel\/([^/?]+)/)[1] : '');
+      videoPlayerIframe.src = `https://www.instagram.com/reel/${igId}/embed`;
+    } else {
+      const ytId = item.youtubeId || 'dQw4w9WgXcQ';
+      videoPlayerIframe.src = `https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1`;
+    }
 
     videoLightbox.classList.add('is-open');
     videoLightbox.setAttribute('aria-hidden', 'false');
@@ -951,6 +752,12 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileMenu.classList.remove('is-open');
       // If we are currently in detail view, return to main view
       if (projectDetailView.style.display !== 'none') {
+        detailBentoGrid.innerHTML = '';
+        detailBentoGrid.classList.remove('is-flex-grid');
+        detailBentoGrid.style.columnCount = '';
+        detailBentoGrid.style.maxWidth = '';
+        detailBentoGrid.style.margin = '';
+        detailBentoGrid.classList.remove('is-single-player');
         projectDetailView.style.display = 'none';
         mainContent.style.display = 'block';
       }
